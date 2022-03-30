@@ -18,7 +18,6 @@ return new class extends Migration
             $table->string('course');
             $table->float('mark');
             $table->string('student_id');
-            $table->foreign('student_id')->references('student_id')->on('student_info');
             $table->timestamps();
         });
     }
